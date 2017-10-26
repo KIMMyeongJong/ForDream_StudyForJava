@@ -16,13 +16,14 @@ public class calculateTest {
 		performance = scan.nextInt();
 
 		if (performance > goal) {
-			bonus = (int) ((performance - goal) * 0.1);
+			bonus = (int) ((performance - goal) * 0.1);// 0.1이 포함되었기 때문에 double형으로 바뀐다. 이 때문에 int형으로 강제 타입변환 해야함			
 			System.out.println("실적달성");
 			System.out.println("보너스 : " + bonus);
 		} // if end
+
 		else {
 			System.out.println("실적을 달성하지 못했습니다.");
-		}//else end
-	}//main method end
+		} // else end
+	}// main method end
 
-}//class end
+}// class end
