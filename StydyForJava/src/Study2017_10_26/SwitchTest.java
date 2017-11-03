@@ -34,6 +34,6 @@ public class SwitchTest {
 			System.out.println("숫자가 너무 커요");
 			break;
 		}//switch end
-	}
+	}//main method end
 
-}
+}//class end

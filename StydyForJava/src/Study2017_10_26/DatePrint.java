@@ -12,10 +12,11 @@ public class DatePrint {
 
 		System.out.println("달을 입력하세요");
 		switchControl = scan.nextInt();
-		if (switchControl < 13) {
+		
+		if (switchControl < 13&&switchControl>0) {
 			switch (switchControl) {
-			case 1:
-			case 3:
+			case 1://정해진 범위를switch로 나타내기 위해 case문에 아무것도 적지 않는다
+			case 3://case에 break가 없이 이어지면 시작case부터 break가 있는 case까지 정해주는 범위가 된다
 			case 5:
 			case 7:
 			case 8:
@@ -29,8 +30,8 @@ public class DatePrint {
 			default:
 				System.out.println("30일 까지 있습니다.");
 				break;
-			}
-		}
-	}
+			}//switch end
+		}//if end
+	}//main method end
 
-}
+}//class end

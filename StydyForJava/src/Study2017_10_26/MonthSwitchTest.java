@@ -9,7 +9,8 @@ public class MonthSwitchTest {
 		String monthInput;
 		System.out.println("월을 입력해 주세요");
 		monthInput = scan.next();
-		switch (monthInput) {
+		
+		switch (monthInput) {//jdk7부터 문자열타입도 switch지원
 		case "january":
 			System.out.println("1");
 			break;
@@ -22,7 +23,7 @@ public class MonthSwitchTest {
 		default:
 			System.out.println("너무 많아요");
 			break;
-		}
-	}
+		}//end switch
+	}//main method end
 
-}
+}//class end
