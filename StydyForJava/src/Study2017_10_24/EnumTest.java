@@ -10,13 +10,13 @@ public class EnumTest {
 		 * valueOfWeek = 열거객체가 가지는 valueOfWeek 메소드
 		 * valuesWeek = 열거객체가 가지는 valuesWeek 메소드
 		 **************************************************/
-		EnumTest test = new EnumTest();
+		EnumTest enumTest = new EnumTest();
 		
-		test.printWeek();
-		test.nameWeek();
-		test.ordinalWeek();
-		test.valueOfWeek();
-		test.valuesWeek();
+		enumTest.printWeek();
+		enumTest.nameWeek();
+		enumTest.ordinalWeek();
+		enumTest.valueOfWeek();
+		enumTest.valuesWeek();
 	}//end main method
 
 	void printWeek() {

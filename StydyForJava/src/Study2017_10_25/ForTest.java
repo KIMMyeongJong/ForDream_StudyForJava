@@ -8,10 +8,11 @@ public class ForTest {
 		 * improvingFor = 향상된 for문
 		 * 기존의 for문에서는 배열을 출력할때 길이를 for문 제어에 사용
 		 * for문 돌때마다 길이를 호출해야 한다는 단점 존재
-		 * 이것을 없애기 위해 사용하는것이 향상된 for문
+		 * 이것을 없애기 위해 사용하는것이 향상된 for문[for-each문]
 		 ***********************************************/
 		ForTest forTest = new ForTest();
 		forTest.existingFor();
+		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
 		forTest.improvingFor();
 	}
 
@@ -20,11 +21,14 @@ public class ForTest {
 			System.out.println(i);
 		}
 	}
-
+	
 	void improvingFor() {
+		int sum = 0;
 		int array[] = { 10, 20, 30, 40, 50, 60 };//배열선언
 		for (int i : array) {//배열의 항목을 순서대로 꺼내 변수 i에 대입
 			System.out.println(i);
+			sum = sum + i;
 		}
+		System.out.println(sum);
 	}
 }
